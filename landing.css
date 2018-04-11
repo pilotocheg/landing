@@ -147,9 +147,9 @@ h1 > span {
 	margin-left: -80px;
 }
 
-/*ВТОРАЯ ЧАСТЬ*/
+/*ВТОРОЙ БЛОК*/
 
-.content_1 {
+.block_2 {
 	min-height: 985px;
 	width: 100%;
 	padding: 100px 150px 0px;
@@ -167,16 +167,17 @@ h2 {
 	margin-bottom: 10px;
 }
 
-.content_1_top_text {
+h3 {
 	opacity: 0.62;
 	color: #000000;
 	font-family: Merriweather;
 	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 1.08px;
+	margin: 0;
 }
 
-.content_1_bottom {
+.block_2_bottom {
 	margin-top: 145px;
 	padding: 0 35px;
 	width: 100%;
@@ -209,14 +210,14 @@ h2 {
 	/*height: 240px;*/
 }
 
-.content_1_bottom_line {
+.block_2_bottom_line {
 	height: 1px;
 	width: calc(100% - 480px - 480px);
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.text_containter_for_c1 {
+.text_containter_for_block2 {
 	width: 474px;
 	min-height: 486px;
 	display: inline-block;
@@ -257,3 +258,4 @@ h2 {
 	margin: 41px 180px;
 	text-align: left;
 }
+
