@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i,700,900|Montserrat:400,400i,500,500i,700,900|Raleway:400,400i,500,500i,700,900');
+
+/* шрифты
+font-family: 'Montserrat', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Raleway', sans-serif; */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	font-size: 0px;
+}
+
+/*ПЕРВАЯ ЧАСТЬ*/
+
+header {
+	padding: 64px 150px 0px;
+	min-height: 806px;
+	width: 100%;
+	background: #eff0f2;
+	text-align: center;
+	border-bottom: 1px solid #eff0f2;
+}
+
+.m_width {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.logo {
+	width: 113px;
+	height: 46px;
+	border: 6px solid #170f1c;
+	background-image: url(./img/shopno.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	vertical-align: middle;
+	transition: transform 0.4s ease-out;
+}
+
+.logo:hover {	
+	transform: scale(1.1);
+	transition: transform 0.4s ease-out;
+}
+
+.logo:active {
+	transform: scale(1.2);
+}
+
+.header_line {
+	height: 30px;
+	display: inline-block;
+	width: calc(100% - 113px - 30px);
+	vertical-align: middle;
+}
+
+.burger {
+	width: 30px;
+	height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+	transition: transform 0.4s ease-out;
+}
+
+.burger:hover {
+	transform: scale(1.1);
+	transition: transform 0.4s ease-out;
+}
+
+.burger:active {
+	transform: scale(1.2);
+}
+
+.burger_line {
+	width: 30px;
+	height: 4px;
+	background: #000000;
+	opacity: 0.6;
+	border-radius: 4px;
+}
+
+.burger_line.middle {
+	margin: 5px 0px;
+}
+
+.header_panel_container {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+h1 {
+	text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+	color: rgba(80, 80, 80, 255);
+	font-family: Montserrat;
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2.7px;
+	margin: 0;
+}
+
+h1 > span {
+	padding: 0 12px;
+	background: rgba(118, 244, 234, 0.5);
+}
+
+.contact {
+	display: inline-block;
+	padding: 12px 42px;
+	color: rgba(0, 0, 0, 0.75);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 2.16px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+	margin-top: 130px;
+	text-decoration: none;
+	transition: transform 0.4s ease-out;
+}
+
+.contact:hover {
+	transform: scale(1.1);
+	border: 2px solid rgba(0, 0, 0, 0.75);
+	transition: transform 0.4s ease-out;
+}
+
+.contact:active {
+	transform: scale(1.15);
+	color: rgba(0, 0, 0, 0.85);
+	text-decoration: underline;
+}
+
+.h1_cup {
+	/*margin-left: 42px;*/
+	margin-top: 10px;
+}
+
+.cup {
+	height: 42px;
+	transform: translate(0px, 230px) scale(2);
+	margin-left: -80px;
+}
+
+/*ВТОРАЯ ЧАСТЬ*/
+
+.content_1 {
+	min-height: 985px;
+	width: 100%;
+	padding: 100px 150px 0px;
+	background: #f8fafa;
+	text-align: center;
+}
+
+h2 {
+	opacity: 0.9;
+	color: #000000;
+	font-family: Montserrat;
+	font-size: 38px;
+	font-weight: 700;
+	letter-spacing: 2.28px;
+	margin-bottom: 10px;
+}
+
+.content_1_top_text {
+	opacity: 0.62;
+	color: #000000;
+	font-family: Merriweather;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1.08px;
+}
+
+.content_1_bottom {
+	margin-top: 145px;
+	padding: 0 35px;
+	width: 100%;
+	min-height: 558px;
+	text-align: center;
+
+}
+
+.image_slider {
+	min-height: 486px;
+	min-width: 479px;
+	display: inline-block;
+	text-align: center;
+	background-image: url(./img/back-for-kreslo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: middle;
+}
+
+.slider_vertical_line {
+	display: inline-block;
+	vertical-align: middle;
+	height: 486px;
+	width: 0px;
+}
+
+.kreslo {
+	display: inline-block;
+	vertical-align: middle;
+	/*height: 240px;*/
+}
+
+.content_1_bottom_line {
+	height: 1px;
+	width: calc(100% - 480px - 480px);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.text_containter_for_c1 {
+	width: 474px;
+	min-height: 486px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.text_containter_bold1 {
+	opacity: 0.75;
+	color: #000000;
+	font-family: Merriweather;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+}
+
+.text_containter_bold2 {
+	opacity: 0.75;
+	color: #000000;
+	font-family: Merriweather;
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 1.02px;
+}
+
+.text_containter_p {
+	opacity: 0.74;
+	color: #000000;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	line-height: 28px;
+	margin-bottom: 30px;
+}
+
+.radiobuttons {
+	margin: 41px 180px;
+	text-align: left;
+}
