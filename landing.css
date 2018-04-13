@@ -517,7 +517,9 @@ h3 {
 	top: 170px;
 	padding: 42px 38px 42px 54px;
 	text-align: left;
-	display: none;
+	/*display: none;*/
+	opacity: 0;
+	transition: 0.5s ease-out;
 }
 
 .info:before {
@@ -530,7 +532,9 @@ h3 {
 }
 
 .pic:hover .info {
-	display: block;
+	/*display: block;*/
+	opacity: 1;
+	transition: 0.5s 0.2s ease-out;
 }
 
 .info h3 {
