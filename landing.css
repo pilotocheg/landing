@@ -470,7 +470,7 @@ h3 {
 .pic_container_3 .pic {
 	width: 373px;
 	min-height: 443px;
-	width: calc((100% - 20px) / 3);
+	/*width: calc((100% - 20px) / 3);*/
 /*	height: calc((100% - 13px) / 2);*/
 	display: inline-block;
 	vertical-align: middle;
