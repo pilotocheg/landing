@@ -703,3 +703,14 @@ h3 {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+/*PARTNERS*/
+
+.partners {
+	min-height: 387px;
+	padding-top: 108px;
+}
+
+.partners img {
+	width: 100%;
+}
