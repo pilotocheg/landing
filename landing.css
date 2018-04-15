@@ -147,7 +147,9 @@ h1 > span {
 	margin-left: -80px;
 }
 
-/*ВТОРОЙ БЛОК*/
+/*-----------------------------------
+ВТОРОЙ БЛОК
+-------------------------------------*/
 
 .block_2 {
 	min-height: 985px;
@@ -266,7 +268,9 @@ h3 {
 	margin-bottom: 30px;
 }
 
-/*БЛОК 3*/
+/*-----------------------------------
+БЛОК 3
+-------------------------------------*/
 
 .block_3 {
 	min-height: 1166px;
@@ -294,7 +298,9 @@ h3 {
 	margin-bottom: 11px;
 }
 
-/*БЛОК 4*/
+/*-------------------------------------
+БЛОК 4
+---------------------------------------*/
 
 .block_4 {
 	min-height: 1621px;
@@ -455,7 +461,9 @@ h3 {
 	transform: translateY(35px);
 }
 
-/*БЛОК 5*/
+/*----------------------------------
+БЛОК 5
+------------------------------------*/
 
 .block_5 {
 	min-height: 1314px;
@@ -577,7 +585,9 @@ h3 {
 	transition: 0.5s ease-out;
 }
 
-/*БЛОК 6*/
+/*-------------------------------
+БЛОК 6
+---------------------------------*/
 
 .block_6 {
 	min-height: 923px;
@@ -704,7 +714,9 @@ h3 {
 	background-position: center;
 }
 
-/*PARTNERS*/
+/*-----------------------------
+PARTNERS
+-------------------------------*/
 
 .partners {
 	min-height: 387px;
@@ -715,7 +727,9 @@ h3 {
 	width: 100%;
 }
 
-/*CONTACTS*/
+/*-------------------------------
+CONTACTS
+---------------------------------*/
 
 .contacts {
 	min-height: 704px;
@@ -828,6 +842,18 @@ form label {
 	background-color: #6eeee4;
 	border: 0px;
 	margin-top: 38px;
+	transition: transform 0.3s ease-out;
+}
+
+.submit:hover {
+	transform: scale(1.05);
+	transition: transform 0.4s ease-out;
+}
+
+.submit:active {
+	outline: 3px solid white;
+	outline-offset: -3px;
+	opacity: 1;
 }
 
 .form_2 {
@@ -852,4 +878,74 @@ form label {
 
 .form_2 a:hover {
 	text-decoration: underline;
+}
+
+/*----------------------------------------
+FOOTER
+----------------------------------------*/
+footer {
+	min-height: 312px;
+	background: #262b2e;
+	text-align: center;
+	padding: 93px 0 50px;
+}
+
+.follow {
+	opacity: 0.8;
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.16px;
+	margin-bottom: 18px;
+}
+
+.social_icons {
+	display: inline-block;
+	margin-left: 7px;
+	background: #424648;
+	width: 46px;
+	height: 40px;
+	text-align: center;
+	padding-top: 9px;
+	vertical-align: middle;
+	transition: background, transform 0.4s ease-out;
+}
+
+.social_icons:hover {
+	background: #71f6eb;
+	transform: scale(1.1);
+	transition: background, transform 0.4s ease-out;
+}
+
+.social_icons:hover .social_pic {
+	filter: invert(1);
+	transform: scale(1.1);
+}
+
+.social_icons:hover .pinterest_p {
+	filter: invert(0);
+}
+
+.social_icons.twitter {
+	padding-top: 11px;
+}
+
+.social_icons.pinterest {
+	margin-left: 0px;
+}
+
+.social_pic.pinterest_p {
+	filter: invert(1);
+}
+
+.copyright {
+	margin-top: 43px;
+	opacity: 0.4;
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.16px;
 }
