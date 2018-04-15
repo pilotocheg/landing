@@ -714,3 +714,142 @@ h3 {
 .partners img {
 	width: 100%;
 }
+
+/*CONTACTS*/
+
+.contacts {
+	min-height: 704px;
+	padding-top: 121px;
+	background: url(./img/back-for-contacts.png);
+	background-size: cover;
+	text-align: center;
+}
+
+.feedback {
+	width: 614px;
+	min-height: 460px;
+	box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+	background-color: #021623;
+	opacity: 0.71;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 28px 33px 20px 31px;
+}
+
+.contacts_form {
+	width: 500px;
+	min-height: 460px;
+	box-shadow: 0 0 3px rgba(21, 21, 21, 0.16);
+	background-color: #021623;
+	opacity: 0.71;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	padding: 32px 22px 15px;
+}
+
+.line_between_forms {
+	display: inline-block;
+	vertical-align: middle;
+	height: 0;
+	width: calc(100% - 614px - 500px);
+}
+
+form label {
+	opacity: 0.6;
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 4px;
+	line-height: 51px;
+}
+
+.input1, .input2, .input3 {
+	width: 80%;
+	margin-left: 10px;
+	background-color: transparent;
+	border: none;
+	opacity: 0.9;
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 400;
+	outline: none;
+}
+
+.form_1 textarea {
+	width: 100%;
+	height: 80px;
+	background-color: transparent;
+	border: none;
+	opacity: 0.9;
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 400;
+	outline: none;
+	resize: none;
+	margin: 10px 0 0 10px;
+}
+
+.form_1 hr {
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+	opacity: 0.6;
+}
+
+.input2 {
+	margin-top: 20px;
+}
+
+.input3 {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.l_for_textarea {
+	line-height: 0px;
+}
+
+.submit {
+	opacity: 0.7;
+	color: #000000;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 28px;
+	letter-spacing: 2.16px;
+	padding: 12px 37px;
+	border-radius: 2px;
+	background-color: #6eeee4;
+	border: 0px;
+	margin-top: 38px;
+}
+
+.form_2 {
+	opacity: 0.7;
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	margin-bottom: 23px;
+}
+
+.form_2 address {
+	font-style: normal;
+}
+
+.form_2 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.form_2 a:hover {
+	text-decoration: underline;
+}
