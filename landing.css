@@ -30,6 +30,10 @@ header {
 	width: 100%;
 }
 
+.m_width.relative {
+	position: relative;
+}
+
 .logo {
 	width: 113px;
 	height: 46px;
@@ -75,6 +79,10 @@ header {
 	transform: scale(1.2);
 }
 
+.burger:active .burger_line {
+	background: lightblue;
+}
+
 .burger_line {
 	width: 30px;
 	height: 4px;
@@ -91,6 +99,49 @@ header {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 200px;
+}
+
+/*ВЫЕЗЖАЮЩЕЕ МЕНЮ*/
+
+nav a {
+	text-decoration: none;
+	display: block;
+	opacity: 0.62;
+	color: #000000;
+	font-family: Merriweather;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1.08px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	width: 200px;
+	padding: 2px 5px;
+	background: #eff0f2;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: white;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.nav {
+	background: lightgray;
+	text-align: right;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	transform: translateX(100px) scaleX(0);
+	/*transition: 0.6s ease-out;*/
+}
+
+#toggle {
+	display: none;
+}
+
+#toggle:checked ~ nav {
+	transform: translateX(0) scaleX(1);
+	transition: 0.6s ease-out;
+	transform-origin: 100% 0%;
 }
 
 h1 {
@@ -195,32 +246,77 @@ h3 {
 }
 
 .image_slider {
-	min-height: 486px;
-	min-width: 479px;
+	height: 538px;
+	width: 479px;
 	display: block;
 	text-align: center;
 	background-image: url(./img/back-for-kreslo.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center 30%;
 	vertical-align: middle;
+	position: relative;
 }
 
-.slider_vertical_line {
-	display: inline-block;
-	vertical-align: middle;
-	height: 486px;
-	width: 0px;
-}
-
-.kreslo {
-	display: inline-block;
-	vertical-align: middle;
+.slide {
 	box-shadow: 0 0 25px rgba(20, 20, 21, 0.25);
+	opacity: 0;
+	position: absolute;
+	left: 42px;
+	transition: all 0.5s ease-out;
+	transform: translateX(-50px);
 }
 
-.radiobuttons {
-	margin: 41px 180px;
-	text-align: left;
+.slide_1 {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.labelr {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 4px;
+	border-radius: 3px;
+	background-color: #d0d0d0;
+	position: absolute;
+	bottom: 0px;
+	left: 40%;
+}
+
+.labelr.second {
+	left: calc(40% + 14px);
+}
+
+.labelr.third {
+	left: calc(40% + 28px);
+}
+
+.labelr.fourth {
+	left: calc(40% + 42px);
+}
+
+.radiob {
+	display: none;
+}
+
+.radiob:checked+.labelr {
+	background-color: #71f6eb;
+}
+
+/*#rb1:checked ~ .slide_1,*/
+#rb2:checked ~ .slide_2,
+#rb3:checked ~ .slide_3,
+#rb4:checked ~ .slide_4 {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all 0.5s ease-out;
+}
+
+#rb2:checked ~ .slide_1,
+#rb3:checked ~ .slide_1,
+#rb4:checked ~ .slide_1 {
+	opacity: 0;
+	transform: translateX(-50px);
 }
 
 .block_2_bottom_line {
@@ -233,7 +329,7 @@ h3 {
 
 .text_containter_for_block2 {
 	width: 474px;
-	min-height: 583px;
+	min-height: 538px;
 	display: inline-block;
 	vertical-align: middle;
 	text-align: left;
@@ -523,7 +619,7 @@ h3 {
 	background: #70f6eb;
 	position: relative;
 	top: 170px;
-	padding: 42px 38px 42px 54px;
+	padding: 42px 38px 38px 54px;
 	text-align: left;
 	/*display: none;*/
 	opacity: 0;
@@ -582,7 +678,7 @@ h3 {
 .info img:hover {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 	transform: scale(1.5);
-	transition: 0.5s ease-out;
+	transition: 0.3s ease-out;
 }
 
 /*-------------------------------
@@ -603,19 +699,78 @@ h3 {
 
 .image_slider2 {
 	width: 393px;
+	height: 469px;
 	background: url(./img/back-for-pic4-1.png);
 	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 47px;
+	background-position: center 23%;
+	position: relative;
 }
 
-.image_slider2 img {
+.slide2 {
 	box-shadow: 0 0 25px rgba(20, 20, 21, 0.25);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 161px);
+	transition: all 0.5s ease-out;
+	transform: translateX(-50px);
+}
+
+.slide2_1 {
+	opacity: 1;
+	transform: translateX(0);
 }
 
 .slider_container2 {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.labelr2 {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 4px;
+	border-radius: 3px;
+	background-color: #d0d0d0;
+	position: absolute;
+	bottom: 0px;
+	left: 40%;
+}
+
+.labelr2.second {
+	left: calc(40% + 14px);
+}
+
+.labelr2.third {
+	left: calc(40% + 28px);
+}
+
+.labelr2.fourth {
+	left: calc(40% + 42px);
+}
+
+.radiob2 {
+	display: none;
+}
+
+.radiob2:checked+.labelr2 {
+	background-color: #71f6eb;
+}
+
+#rb2-2:checked ~ .slide2_2,
+#rb2-3:checked ~ .slide2_3,
+#rb2-4:checked ~ .slide2_4 {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all 0.5s ease-out;
+}
+
+#rb2-2:checked ~ .slide2_1,
+#rb2-3:checked ~ .slide2_1,
+#rb2-4:checked ~ .slide2_1 {
+	opacity: 0;
+	transform: translateX(50px);
 }
 
 .middle_line {
@@ -690,6 +845,7 @@ h3 {
 	margin-left: 29px;
 	background-position: center;
 	background-repeat: no-repeat;
+	transition: background 0.4s ease-out;
 }
 
 .button1 {
@@ -705,6 +861,7 @@ h3 {
 	background-image: url(./img/button-left-b.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: background 0.4s ease-out;
 }
 
 .button2:hover {
@@ -712,6 +869,7 @@ h3 {
 	background-image: url(./img/button-right-b.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: background 0.4s ease-out;
 }
 
 /*-----------------------------
@@ -743,8 +901,8 @@ CONTACTS
 	width: 614px;
 	min-height: 460px;
 	box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
-	background-color: #021623;
-	opacity: 0.71;
+	background-color: rgba(2, 22, 35, 0.71);
+	/*opacity: 0.71;*/
 	display: inline-block;
 	vertical-align: middle;
 	margin-bottom: 20px;
@@ -756,8 +914,8 @@ CONTACTS
 	width: 500px;
 	min-height: 460px;
 	box-shadow: 0 0 3px rgba(21, 21, 21, 0.16);
-	background-color: #021623;
-	opacity: 0.71;
+	background-color: rgba(2, 22, 35, 0.71);
+	/*opacity: 0.71;*/
 	display: inline-block;
 	vertical-align: middle;
 	margin-bottom: 20px;
@@ -834,7 +992,7 @@ form label {
 	color: #000000;
 	font-family: Montserrat;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 28px;
 	letter-spacing: 2.16px;
 	padding: 12px 37px;
@@ -878,6 +1036,11 @@ form label {
 
 .form_2 a:hover {
 	text-decoration: underline;
+}
+
+.contacts_form iframe {
+	width: 100%;
+	height: 224px;
 }
 
 /*----------------------------------------

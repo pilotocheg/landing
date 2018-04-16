@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>my landing project</title>
 	<link rel="stylesheet" type="text/css" href="landing.css">
 </head>
 <body>
 	<header>
-		<div class="m_width">
+		<div class="m_width relative">
 			<div class="header_panel_container">
 				<div class="logo"></div>
 				<div class="header_line"></div>
-				<div class="burger">
-					<div class="burger_line"></div>
-					<div class="burger_line middle"></div>
-					<div class="burger_line"></div>
-				</div>
+				<input id="toggle" name="toggle" type="checkbox">
+				<label class="toggle-container" for="toggle">
+					<div class="burger">
+						<div class="burger_line"></div>
+						<div class="burger_line middle"></div>
+						<div class="burger_line"></div>
+					</div>
+				</label>
+				<nav class="nav">
+					<a class="nav-item scrollto" href="#about_us">ABOUT US</a>
+					<a class="nav-item scrollto" href="#featured_works">FEATURED WORKS</a>
+					<a class="nav-item scrollto" href="#our_services">OUR SERVICES</a>
+					<a class="nav-item scrollto" href="#small_team">SMALL TEAM</a>
+					<a class="nav-item scrollto" href="#what_they_says">WHAT THEY SAYS</a>
+					<a class="nav-item scrollto" href="#partners">PARTNERS</a>
+					<a class="nav-item scrollto" href="#contacts">CONTACT US</a>
+					<a class="nav-item scrollto" href="#follow">FOLLOW US</a>
+				</nav>
 			</div>
 			<h1>SAY HELLO TO <span>SHOPNO!</span>
 				<br>
 				<span>AGENCY</span> CORPORATE SHOPNO THEME
-				<img class="cup" src="./img/cup.png">
+				<img class="cup" src="./img/juice.png">
 			</h1>
-			<a class="contact" href="">CONTACT US</a>
+			<a class="contact scrollto" href="#contacts">CONTACT US</a>
 		</div>
 	</header>
 	<div class="block_2">
 		<div class="m_width">
-			<h2 align="center">ABOUT US</h2>
+			<h2 align="center" id="about_us">ABOUT US</h2>
 			<h3>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h3>
 			<div class="block_2_bottom">
 				<div class="slider_container">
 					<div class="image_slider">
-						<div class="slider_vertical_line"></div>
-						<img class="kreslo" src="./img/kreslo.png">
-					</div>
-					<div class="radiobuttons">
-						<input type="radio" name="radio">
-						<input type="radio" name="radio">
-						<input type="radio" name="radio">
-						<input type="radio" name="radio">
+						<input checked class="radiob" type="radio" name="radio" id="rb1">
+						<label class="labelr" for="rb1"></label>
+						<input class="radiob" type="radio" name="radio" id="rb2">
+						<label class="labelr second" for="rb2"></label>
+						<input class="radiob" type="radio" name="radio" id="rb3">
+						<label class="labelr third" for="rb3"></label>
+						<input class="radiob" type="radio" name="radio" id="rb4">
+						<label class="labelr fourth" for="rb4"></label>
+						<img class="slide slide_1" src="./img/slide_1.png">
+						<img class="slide slide_2" src="./img/slide_2.png">
+						<img class="slide slide_3" src="./img/slide_3.png">
+						<img class="slide slide_4" src="./img/slide_4.png">
 					</div>
 				</div>
 				<div class="block_2_bottom_line"></div>
@@ -58,7 +75,7 @@
 	</div>
 	<div class="block_3">
 		<div class="m_width">
-			<h2 align="center">FEATURED WORKS</h2>
+			<h2 align="center" id="featured_works">FEATURED WORKS</h2>
 			<h3>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h3>
 			<div class="pic_container">
 				<img src="./img/pic1-1.png">
@@ -72,7 +89,7 @@
 	</div>
 	<div class="block_4">
 		<div class="m_width">
-			<h2 align="center">OUR SERVICES</h2>
+			<h2 align="center" id="our_services">OUR SERVICES</h2>
 			<h3>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h3>
 			<div class="pic_container_2">
 				<div class="img2-1">
@@ -146,7 +163,7 @@
 	</div>
 	<div class="block_5">
 		<div class="m_width">
-			<h2 align="center">SMALL TEAM</h2>
+			<h2 align="center" id="small_team">SMALL TEAM</h2>
 			<h3>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h3>
 			<div class="pic_container_3">
 				<div class="pic pic3-1">
@@ -214,18 +231,23 @@
 	</div>
 	<div class="block_6">
 		<div class="m_width">
-			<h2 align="center">WHAT THEY SAYS</h2>
+			<h2 align="center" id="what_they_says">WHAT THEY SAYS</h2>
 			<h3>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h3>
 			<div class="block_6_content">
 				<div class="slider_container2">
 					<div class="image_slider2">
-						<img src="./img/pic4-1.png">
-					</div>
-					<div class="radiobuttons2">
-						<input type="radio" name="radio">
-						<input type="radio" name="radio">
-						<input type="radio" name="radio">
-						<input type="radio" name="radio">
+						<input checked class="radiob2" type="radio" name="radio" id="rb2-1">
+						<label class="labelr2" for="rb2-1"></label>
+						<input class="radiob2" type="radio" name="radio" id="rb2-2">
+						<label class="labelr2 second" for="rb2-2"></label>
+						<input class="radiob2" type="radio" name="radio" id="rb2-3">
+						<label class="labelr2 third" for="rb2-3"></label>
+						<input class="radiob2" type="radio" name="radio" id="rb2-4">
+						<label class="labelr2 fourth" for="rb2-4"></label>
+						<img class="slide2 slide2_1" src="./img/slide2-1.png">
+						<img class="slide2 slide2_2" src="./img/slide2-2.png">
+						<img class="slide2 slide2_3" src="./img/slide2-3.png">
+						<img class="slide2 slide2_4" src="./img/slide2-4.png">
 					</div>
 				</div>
 				<div class="middle_line"></div>
@@ -249,12 +271,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="partners">
+	<div class="partners" id="partners">
 		<div class="m_width">
 			<img src="./img/partners.png">
 		</div>
 	</div>
-	<div class="contacts">
+	<div class="contacts"  id="contacts">
 		<div class="m_width">
 			<div class="feedback">
 				<form class="form_1">
@@ -294,13 +316,14 @@
 							E-mail: <a href="mailto:us@example.org">info@designagency.net</a>
 						</email>
 				</div>
-				<img src="./img/map.png">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.400840861649!2d34.53040751516253!3d49.60904735551277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d8260fbe9d37ff%3A0x2f170fb515b25cc4!2z0JTQvtGB0LvRltC00L3QsCDQstGD0LvQuNGG0Y8sIDYsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e0!3m2!1sru!2sua!4v1523889990560" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<!-- <img src="./img/map.png"> -->
 			</div>
 		</div>
 	</div>
 	<footer>
 		<div class="m_width">
-			<h3 class="follow">FOLLOW US</h3>
+			<h3 class="follow" id="follow">FOLLOW US</h3>
 			<a class="social_icons pinterest" href="https://ru.pinterest.com/" target="_blank"><img class="social_pic pinterest_p" src="./img/pinterest.png"></a>
 			<a class="social_icons twitter" href="https://twitter.com/" target="_blank"><img class="social_pic" src="./img/twitter2.png"></a>
 			<a class="social_icons fb" href="https://www.facebook.com/" target="_blank"><img class="social_pic" src="./img/fb2.png"></a>
@@ -308,5 +331,7 @@
 			<p class="copyright">Copyright Masum Parvej, All Rights Reserved</p>
 		</div>
 	</footer>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
