@@ -784,6 +784,7 @@ h3 {
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 24px;
+	position: relative;
 }
 
 .v_card {
@@ -793,6 +794,7 @@ h3 {
 	border-radius: 3px;
 	text-align: center;
 	padding: 94px 81px 69px 80px;
+	transform: translateX(0);
 }
 
 .v_card h3 {
@@ -835,6 +837,10 @@ h3 {
 	margin-top: 30px;
 }
 
+.radiob3 {
+	display: none;
+}
+
 .button1, .button2 {
 	width: 53px;
 	height: 53px;
@@ -856,7 +862,7 @@ h3 {
 	background-image: url(./img/button-right.png);
 }
 
-.button1:hover {
+#rb3-1:checked + .button1 {
 	background: #71f6eb;
 	background-image: url(./img/button-left-b.png);
 	background-repeat: no-repeat;
@@ -864,7 +870,7 @@ h3 {
 	transition: background 0.4s ease-out;
 }
 
-.button2:hover {
+#rb3-2:checked + .button2 {
 	background: #71f6eb;
 	background-image: url(./img/button-right-b.png);
 	background-repeat: no-repeat;
