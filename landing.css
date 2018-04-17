@@ -785,16 +785,20 @@ h3 {
 	vertical-align: middle;
 	margin-top: 24px;
 	position: relative;
+	width: 666px;
+	min-height: 445px;
 }
 
 .v_card {
+	position: absolute;
+	top: 0;
 	width: 666px;
-	min-height: 362px;
+	height: 362px;
 	background: #eaebed;
 	border-radius: 3px;
 	text-align: center;
 	padding: 94px 81px 69px 80px;
-	transform: translateX(0);
+	/*transform: scaleX(0);*/
 }
 
 .v_card h3 {
@@ -831,31 +835,28 @@ h3 {
 	margin-right: 6px;
 }
 
-.v_card_buttons {
-	width: 100%;
-	text-align: right;
-	margin-top: 30px;
-}
-
 .radiob3 {
 	display: none;
 }
 
-.button1, .button2 {
+.button_t {
 	width: 53px;
 	height: 53px;
 	box-shadow: 3px 7px 11px rgba(20, 20, 21, 0.05);
 	border-radius: 3px;
 	background-color: #ffffff;
 	display: inline-block;
-	margin-left: 29px;
 	background-position: center;
 	background-repeat: no-repeat;
 	transition: background 0.4s ease-out;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .button1 {
 	background-image: url(./img/button-left.png);
+	right: 82px;
 }
 
 .button2 {
